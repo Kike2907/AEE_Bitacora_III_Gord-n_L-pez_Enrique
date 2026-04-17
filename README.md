@@ -10,7 +10,7 @@ Severity:Esto nos dice el nivel de urgencia o importancia de un suceso o un even
 
  ## Análisis de Seguridad en /var/log/auth.log ##
 
- Permitir que usuarios no privilegiados tengan permisos de lectura sobre `auth.log` es una vulnerabilidad crítica. Un atacante con acceso limitado podría realizar **reconocimiento pasivo**, identificando patrones de conexión de administradores, nombres de usuarios válidos del sistema o incluso detectar si otros atacantes están intentando vulnerar la máquina, facilitando el movimiento lateral o la escalada de privilegios [4].
+ Permitir que usuarios no privilegiados tengan permisos de lectura sobre `auth.log` es una vulnerabilidad crítica. Un atacante con acceso limitado podría realizar **reconocimiento pasivo**, identificando patrones de conexión de administradores, nombres de usuarios válidos del sistema o incluso detectar si otros atacantes están intentando vulnerar la máquina, facilitando el movimiento lateral o la escalada de privilegios.
 
  ## Diferenciación de eventos SSH ##
 Un intento de conexión remota fallido se distingue de un error local por la presencia de la **dirección IP de origen** y el "puerto efímero",un fallo local registra el terminal físico (`tty`), un ataque remoto registra `sshd` junto con la IP externa, permitiendo diferenciar un error humano interno de un ataque de fuerza bruta coordinado.
